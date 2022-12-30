@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Session;
 */
 
 Route::get('/', function () {
-    return ["version" => "1.0"];
+    return ["version" => "2.0"];
 });
 
 Route::get('/lang', function () {

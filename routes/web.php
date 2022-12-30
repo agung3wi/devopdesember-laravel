@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Session;
 */
 
 Route::get('/', function () {
-    return 'Ini halaman Home';
+    return ["version" => "1.0"];
 });
 
 Route::get('/lang', function () {

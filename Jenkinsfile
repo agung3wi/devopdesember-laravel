@@ -9,7 +9,9 @@ node {
     }
 
     stage('Test') {
-        sh 'echo "Test"'
+        docker.image('php:7.4-cli').inside('-u root') {
+            sh 'php artisan test --testsuite=Unit'
+        }
     }
 
     stage('Deploy') {
